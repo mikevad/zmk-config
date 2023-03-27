@@ -55,10 +55,10 @@
  */
 
             bindings = <
-&kp GRAVE     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                          &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
-&kp TILDE  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                              &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
-   &trans     &kp PLUS  &kp UNDER      &kp SLASH   &kp MINUS        &kp LEFT_BRACE  &trans                           &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
-                                                       &none                 &none   &none  &none  &kp MINUS  &kp KP_EQUAL        &kp KP_NUMBER_0       &kp KP_DOT
+&kp GRAVE     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                             &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &none
+&kp TILDE  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                                 &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none
+   &trans     &kp PLUS  &kp UNDER      &kp SLASH       &none        &kp LEFT_BRACE  &trans                              &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none
+                                                       &none                 &none   &none  &none  &kp KP_MINUS  &kp KP_EQUAL        &kp KP_NUMBER_0       &kp KP_DOT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
