@@ -57,7 +57,7 @@
             bindings = <
 &trans     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp GRAVE  &none
 &trans  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                      &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &none  &none
-&trans     &kp PLUS  &kp MINUS      &kp SLASH   &kp EQUAL        &kp LEFT_BRACE  &trans                   &mo 3        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3      &none  &none
+ &none     &kp PLUS  &kp MINUS      &kp SLASH   &kp EQUAL        &kp LEFT_BRACE  &trans                   &mo 3        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3      &none  &none
                                                    &trans                &trans   &to 0  &trans  &trans  &trans        &kp KP_NUMBER_0       &kp KP_DOT
             >;
 
@@ -93,10 +93,10 @@
  */
 
             bindings = <
- &none         &none         &none         &none         &none         &none                                   &none  &none         &none         &none  &ext_power EP_OFF  &ext_power EP_ON
-&reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                   &none  &none         &none         &none              &none            &reset
- &none         &none         &none         &none         &none         &none  &bt BT_CLR                &none  &none  &none  &out OUT_USB  &out OUT_BLE              &none       &bootloader
-                                                         &none         &none       &none  &none  &none  &none  &none  &none
+&none         &none         &none         &none         &none         &none                                   &none  &none         &none         &none  &ext_power EP_OFF  &ext_power EP_ON
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                   &none  &none         &none         &none              &none             &none
+&none         &none         &none         &none         &none         &none  &bt BT_CLR                &none  &none  &none  &out OUT_USB  &out OUT_BLE              &none             &none
+                                                        &none         &none       &none  &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -104,10 +104,10 @@
 
         magnet_layer {
             bindings = <
-&none  &kp LC(LA(N1))  &kp LC(LA(N2))  &kp LC(LA(N3))  &kp LC(LA(N4))  &kp LC(LA(N5))                              &kp LC(LA(N6))  &kp LA(LC(COMMA))    &kp LA(LC(UP))    &kp LA(LC(DOT))  &none  &none
-&none           &none           &none   &kp LA(LC(E))   &kp LA(LC(F))   &kp LA(LC(R))                                       &none   &kp LA(LC(LEFT))  &kp LA(LC(DOWN))  &kp LA(LC(RIGHT))  &none  &none
-&none           &none           &none   &kp LA(LC(D))   &kp LA(LC(F))   &kp LA(LC(G))  &none                &none           &none              &none             &none              &none  &none  &none
-                                                                &none           &none  &none  &none  &none  &none           &none              &none
+&none  &kp LC(LA(N1))  &kp LC(LA(N2))  &kp LC(LA(N3))     &kp LC(LA(N4))  &kp LC(LA(N5))                              &kp LC(LA(N6))  &kp LA(LC(COMMA))    &kp LA(LC(UP))    &kp LA(LC(DOT))  &none  &none
+&none           &none           &none   &kp LA(LC(E))  &kp LA(LC(ENTER))   &kp LA(LC(R))                                       &none   &kp LA(LC(LEFT))  &kp LA(LC(DOWN))  &kp LA(LC(RIGHT))  &none  &none
+&none           &none           &none   &kp LA(LC(D))      &kp LA(LC(F))   &kp LA(LC(G))  &none                &none           &none              &none             &none              &none  &none  &none
+                                                                   &none           &none  &none  &none  &none  &none           &none              &none
             >;
         };
     };
