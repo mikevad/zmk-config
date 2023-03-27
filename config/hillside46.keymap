@@ -56,8 +56,8 @@
 
             bindings = <
 &trans     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp GRAVE  &trans
-&trans  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                      &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6     &trans  &trans
-&trans     &kp PLUS  &kp MINUS      &kp SLASH   &kp EQUAL        &kp LEFT_BRACE  &trans                   &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &trans  &trans
+&trans  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                      &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &none  &trans
+&trans     &kp PLUS  &kp MINUS      &kp SLASH   &kp EQUAL        &kp LEFT_BRACE  &trans                   &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3      &none  &trans
                                                    &trans                &trans   &to 0  &trans  &trans  &trans        &kp KP_NUMBER_0       &kp KP_DOT
             >;
 
@@ -74,10 +74,10 @@
  */
 
             bindings = <
-&trans  &trans  &kp LG(W)  &kp LG(R)  &kp LG(T)  &kp LG(SPACE)                                   &kp LG(LEFT)  &kp LG(RIGHT)  &kp UP_ARROW  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
- &none  &trans     &trans     &trans  &kp LG(F)  &kp LG(LS(T))                                      &kp LG(F)       &kp LEFT      &kp DOWN             &kp RIGHT                  &none  &none
-&trans  &trans  &kp LG(X)  &kp LG(C)  &kp LG(V)         &trans  &trans                   &to 0      &kp LG(N)     &kp C_PREV    &kp C_PREV              &kp C_PP             &kp C_NEXT  &none
-                                         &trans         &trans  &trans  &trans  &trans  &trans  &kp C_AC_UNDO     &kp DELETE
+&trans  &kp LG(Q)  &kp LG(W)  &kp LG(R)  &kp LG(T)  &kp LG(SPACE)                                  &kp LG(LEFT)  &kp LG(RIGHT)  &kp UP_ARROW  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp PAGE_UP
+&trans  &kp LG(A)  &kp LG(S)      &none  &kp LG(F)  &kp LG(LS(T))                                     &kp LG(F)       &kp LEFT      &kp DOWN             &kp RIGHT               &kp HOME        &kp END
+&trans      &none  &kp LG(X)  &kp LG(C)  &kp LG(V)          &none  &trans                   &to 0     &kp LG(N)     &kp C_PREV    &kp C_PREV              &kp C_PP             &kp C_NEXT  &kp PAGE_DOWN
+                                            &trans         &trans   &none  &trans  &trans  &trans     &kp LG(Z)     &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -93,10 +93,10 @@
  */
 
             bindings = <
- &none         &to 0         &to 1         &to 2         &none         &none                                       &none  &kp F11       &kp F12  &kp PRINTSCREEN  &ext_power EP_OFF  &ext_power EP_ON
-&reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                       &none    &none         &none            &none              &none            &reset
- &none      &kp LGUI      &kp LALT     &kp LCTRL    &kp LSHIFT         &none  &bt BT_CLR                   &none   &none    &none  &out OUT_USB     &out OUT_BLE              &none       &bootloader
-                                                        &trans        &trans      &trans  &trans  &trans  &trans  &trans   &trans
+ &none         &none         &none         &none         &none         &none                                   &none  &none         &none         &none  &ext_power EP_OFF  &ext_power EP_ON
+&reset  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                   &none  &none         &none         &none              &none            &reset
+ &none         &none         &none         &none         &none         &none  &bt BT_CLR                &none  &none  &none  &out OUT_USB  &out OUT_BLE              &none       &bootloader
+                                                         &none         &none       &none  &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
