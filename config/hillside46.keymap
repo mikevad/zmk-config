@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define QWERTY_L 0
 #define DVORAK_L 1
@@ -27,13 +28,6 @@
         compatible = "zmk,keymap";
 
         coding_layer {
-            /* QWERTY
- * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Y   |   U   |   I   |   O   |   P   | BKSPC |
- * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   | ENTER |
- * | CTRL  |   Z   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  CAPS |   N   |   M   |   ,   |   .   |   /   |   '   |
- *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
- */
 
             bindings = <
        &kp ESC  &kp Q  &kp W  &kp E      &kp R     &kp T                                                     &kp Y  &kp U      &kp I    &kp O      &kp P     &kp BACKSLASH
@@ -46,13 +40,6 @@
         };
 
         numbers_layer {
-            /* NAV   
- * -------------------------------------------------------------------------------------------------------------------------------------
- * | Copy  |   1   |   2   |   3   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
- * | Cut   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
- * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
- *                                 |       |       |       |       |---| ADJ_L |       |       |       |
- */
 
             bindings = <
 &kp TILDE     &kp EXCL     &kp AT      &kp POUND    &kp DOLLAR  &kp LEFT_PARENTHESIS                                       &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &none
@@ -65,16 +52,9 @@
         };
 
         NAV_LAYER {
-            /* SYM
- * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   !   |   @   |   #   |   $   |   %   |-----------------------------------|   ^   |   &   |   *   |   (   |   )   | BSPC  |
- * |       |   \   |   -   |   =   |   [   |   ]   |-----------------------------------| HOME  | Shift | Ctrl  | Alt   | Gui   | END   |
- * | Ctrl  |   |   |   _   |   +   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
- *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
- */
 
             bindings = <
-&trans      &none      &none  &kp PG_UP      &none  &kp LG(SPACE)                                            &kp LC(LS(TAB))  &kp LC(TAB)      &kp UP  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
+&trans      &none      &none  &mmv MOVE_UP      &none  &kp LG(SPACE)                                            &kp LC(LS(TAB))  &kp LC(TAB)      &kp UP  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
 &trans      &none    &kp END  &kp PG_DN   &kp HOME          &none                                                      &none     &kp LEFT    &kp DOWN             &kp RIGHT                  &none  &none
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)          &none        &trans                       &none            &none   &kp C_PREV  &kp C_PREV              &kp C_PP             &kp C_NEXT  &none
                                             &trans         &trans  &kp LEFT_ALT  &kp DELETE  &trans  &trans            &none        &none
@@ -84,13 +64,6 @@
         };
 
         adj_layer {
-            /* ADJUST
- * -------------------------------------------------------------------------------------------------------------------------------------
- * |       | QWERTY| DVORAK| COLEMK|       |       |-----------------------------------|       |  F11  |  F12  |Prt Scr|EP_OFF | EP_ON |
- * | RESET | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |       | RESET |
- * |       | LGUI  | LALT  | LCTRL | LSHIFT|       |BT CLR |-------------------|       |       |       |OUT_USB|OUT_BLE|       | BOOTL |
- *                                 |       |       |       |       |---|       |       |       |       |
- */
 
             bindings = <
 &none         &none         &none         &none         &none         &none                                   &none  &none         &none         &none  &ext_power EP_OFF  &ext_power EP_ON
