@@ -53,19 +53,19 @@
 
         numbers_layer {
             bindings = <
-&kp TILDE     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &none
-&kp GRAVE  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                        &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp ENTER  &none
-   &trans     &kp PLUS  &kp UNDER      &kp SLASH   &kp MINUS        &kp LEFT_BRACE  &trans                     &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3          &none  &none
-                                                      &trans                &trans   &none  &none  &trans  &kp EQUAL        &kp KP_NUMBER_0       &kp KP_DOT
+&kp TILDE     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                       &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &none
+&kp GRAVE  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                           &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp ENTER  &none
+   &trans     &kp PLUS  &kp UNDER      &kp SLASH   &kp MINUS        &kp LEFT_BRACE     &trans                     &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3          &none  &none
+                                                      &trans                &trans  &kp SPACE  &none  &trans  &kp EQUAL        &kp KP_NUMBER_0       &kp KP_DOT
             >;
         };
 
         NAV_LAYER {
             bindings = <
-&trans      &none                         &kp LG(W)  &mmv MOVE_VERT(-U_MOUSE_MOVE_MAX)                        &mkp RCLK  &kp LG(SPACE)                                           &kp LC(LS(TAB))  &kp LC(TAB)      &kp UP  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
-&trans      &none  &mmv MOVE_HOR(-U_MOUSE_MOVE_MAX)   &mmv MOVE_VERT(U_MOUSE_MOVE_MAX)  &mmv MOVE_HOR(U_MOUSE_MOVE_MAX)      &kp PG_UP                                                     &none     &kp LEFT    &kp DOWN             &kp RIGHT                  &none  &none
-&trans  &kp LG(Z)                         &kp LG(X)                          &kp LG(C)                        &kp LG(V)      &kp PG_DN    &kp DELETE                      &none            &none   &kp C_PREV  &kp C_PREV              &kp C_PP             &kp C_NEXT  &none
-                                                                                                                 &trans         &trans  &kp LEFT_ALT  &mkp LCLK  &trans  &trans            &none        &none
+&trans      &none                         &kp LG(W)  &mmv MOVE_VERT(-U_MOUSE_MOVE_MAX)            &mkp RCLK  &kp LG(SPACE)                                           &kp LC(LS(TAB))  &kp LC(TAB)      &kp UP  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
+&trans      &none  &mmv MOVE_HOR(-U_MOUSE_MOVE_MAX)               &mmv MOVE_VERT(1500)  &mmv MOVE_HOR(1500)      &kp PG_UP                                                     &none     &kp LEFT    &kp DOWN             &kp RIGHT                  &none  &none
+&trans  &kp LG(Z)                         &kp LG(X)                          &kp LG(C)            &kp LG(V)      &kp PG_DN    &kp DELETE                      &none            &none   &kp C_PREV  &kp C_PREV              &kp C_PP             &kp C_NEXT  &none
+                                                                                                     &trans         &trans  &kp LEFT_ALT  &mkp LCLK  &trans  &trans            &none        &none
             >;
         };
 
