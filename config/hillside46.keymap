@@ -38,7 +38,7 @@
     time-to-max-speed-ms = <400>;
 };
 
-/ {
+{
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
