@@ -44,10 +44,10 @@
 
         coding_layer {
             bindings = <
-       &kp ESC  &kp Q  &kp W  &kp E      &kp R     &kp T                                                     &kp Y  &kp U      &kp I    &kp O      &kp P     &kp BACKSLASH
-       &kp TAB  &kp A  &kp S  &kp D      &kp F     &kp G                                                     &kp H  &kp J      &kp K    &kp L   &kp SEMI  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V     &kp B  &kp LEFT_ALT                                &to 3  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH   &kp RIGHT_SHIFT
-                                     &kp LCTRL  &kp LCMD         &mo 1  &kp BACKSPACE  &kp ENTER  &kp SPACE  &mo 2  &mo 4
+       &kp ESC  &kp Q           &kp W        &kp E       &kp R     &kp T                                                     &kp Y       &kp U        &kp I           &kp O      &kp P     &kp BACKSLASH
+       &kp TAB  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LCMD F     &kp G                                                     &kp H  &mt LCMD J  &mt LCTRL K  &mt LEFT_ALT L   &kp SEMI  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z           &kp X        &kp C       &kp V     &kp B  &kp LEFT_ALT                                &to 3  &kp N       &kp M    &kp COMMA         &kp DOT  &kp SLASH   &kp RIGHT_SHIFT
+                                                     &kp LCTRL  &kp LCMD         &mo 1  &kp BACKSPACE  &kp ENTER  &kp SPACE  &mo 2       &mo 4
             >;
         };
 
@@ -62,19 +62,19 @@
 
         NAV_LAYER {
             bindings = <
-&trans      &none                         &kp LG(W)  &mmv MOVE_UP           &mkp RCLK  &kp LG(SPACE)                                           &kp LC(LS(TAB))  &kp LC(TAB)      &kp UP  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
-&trans      &none  &mmv MOVE_LEFT               &mmv MOVE_DOWN  &mmv MOVE_RIGHT      &kp PG_UP                                                     &none     &kp LEFT    &kp DOWN             &kp RIGHT                  &none  &none
-&trans  &kp LG(Z)                         &kp LG(X)                          &kp LG(C)            &kp LG(V)      &kp PG_DN    &kp DELETE                      &none            &none   &kp C_PREV  &kp C_PREV              &kp C_PP             &kp C_NEXT  &none
-                                                                                                     &trans         &trans  &kp LEFT_ALT  &mkp LCLK  &trans  &trans            &none        &none
+&trans      &none       &kp LG(W)    &mmv MOVE_UP        &mkp RCLK  &kp LG(SPACE)                                           &kp LC(LS(TAB))  &kp LC(TAB)      &kp UP  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &none
+&trans      &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT      &kp PG_UP                                                     &none     &kp LEFT    &kp DOWN             &kp RIGHT                  &none  &none
+&trans  &kp LG(Z)       &kp LG(X)       &kp LG(C)        &kp LG(V)      &kp PG_DN    &kp DELETE                      &none            &none   &kp C_PREV  &kp C_PREV              &kp C_PP             &kp C_NEXT  &none
+                                                            &trans         &trans  &kp LEFT_ALT  &mkp LCLK  &trans  &trans            &none        &none
             >;
         };
 
         adj_layer {
             bindings = <
-&none         &none         &none         &none         &none         &none                                   &none  &none         &none         &none  &ext_power EP_OFF  &ext_power EP_ON
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                   &none  &none         &none         &none              &none             &none
-&none         &none         &none         &none         &none         &none  &bt BT_CLR                &to 0  &none  &none  &out OUT_USB  &out OUT_BLE              &none             &none
-                                                        &none         &none       &none  &none  &none  &none  &none  &none
+&none         &none         &none         &none         &none         &none                              &none  &none         &none         &none  &ext_power EP_OFF  &ext_power EP_ON
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &none  &none         &none         &none              &none             &none
+&none         &none         &none         &none         &none         &none  &none                &to 0  &none  &none  &out OUT_USB  &out OUT_BLE              &none             &none
+                                                        &none         &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
