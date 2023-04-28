@@ -69,9 +69,9 @@
 
         magnet_layer {
             bindings = <
-&bt BT_SEL 1  &kp LC(LA(N1))  &kp LC(LA(N2))  &kp LC(LA(N3))     &kp LC(LA(N4))  &kp LC(LA(N5))                              &kp LC(LA(N6))  &kp LA(LC(COMMA))    &kp LA(LC(UP))    &kp LA(LC(DOT))  &none  &bt BT_CLR
-&bt BT_SEL 2           &none           &none   &kp LA(LC(E))  &kp LA(LC(ENTER))   &kp LA(LC(T))                                       &none   &kp LA(LC(LEFT))  &kp LA(LC(DOWN))  &kp LA(LC(RIGHT))  &none       &none
-       &none           &none           &none   &kp LA(LC(D))      &kp LA(LC(F))   &kp LA(LC(G))  &none                &none           &none              &none             &none              &none  &none       &none
+&bt BT_SEL 0  &kp LC(LA(N1))  &kp LC(LA(N2))  &kp LC(LA(N3))     &kp LC(LA(N4))  &kp LC(LA(N5))                              &kp LC(LA(N6))  &kp LA(LC(COMMA))    &kp LA(LC(UP))    &kp LA(LC(DOT))  &none  &bt BT_CLR
+&bt BT_SEL 1           &none           &none   &kp LA(LC(E))  &kp LA(LC(ENTER))   &kp LA(LC(T))                                       &none   &kp LA(LC(LEFT))  &kp LA(LC(DOWN))  &kp LA(LC(RIGHT))  &none       &none
+&bt BT_SEL 2           &none           &none   &kp LA(LC(D))      &kp LA(LC(F))   &kp LA(LC(G))  &none                &none           &none              &none             &none              &none  &none       &none
                                                                           &none           &none  &none  &none  &none  &none           &none              &none
             >;
         };
