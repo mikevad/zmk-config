@@ -51,10 +51,10 @@
 
         numbers_layer {
             bindings = <
-&kp TILDE     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE  &none
-&kp GRAVE  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                        &kp RIGHT_BRACKET  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6      &kp ENTER  &none
-   &trans     &kp PLUS  &kp UNDER      &kp SLASH   &kp MINUS        &kp LEFT_BRACE  &trans                     &none        &kp RIGHT_BRACE        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3          &none  &none
-                                                      &trans                &trans   &none  &none  &trans  &kp EQUAL        &kp KP_NUMBER_0       &kp KP_DOT
+&kp TILDE     &kp EXCL     &kp AT      &kp POUND  &kp DOLLAR  &kp LEFT_PARENTHESIS                                    &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSPACE  &none
+&kp GRAVE  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR      &kp LEFT_BRACKET                                        &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6      &kp ENTER  &none
+   &trans     &kp PLUS  &kp UNDER      &kp SLASH   &kp MINUS        &kp LEFT_BRACE  &trans                     &none        &kp RIGHT_BRACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &none  &none
+                                                      &trans                &trans   &none  &none  &trans  &kp EQUAL           &kp NUMBER_0    &kp KP_DOT
             >;
         };
 
